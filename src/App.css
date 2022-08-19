@@ -1,38 +1,96 @@
-.App {
-  text-align: center;
+body {
+  margin: 0px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main {
+  background-image: url('./images/background.png');
+  background-attachment: fixed;
+  background-size: 100%;
+  color: antiquewhite;
+  margin: 0px;
+  border: 0px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header.title {
+  font-size: 50px;
+  margin-bottom: 12px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #47b392;
+}
+
+.planets-container {
+  display: flex;
+}
+
+.solar-system {
+  margin-bottom: 15px;
+}
+
+.planet-card {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  color: antiquewhite;
+  background-color: #0e221c6c;
+  border: 3px solid #55dfb5;
+  border-radius: 10px;
+  margin: 0px 5px 0px 5px;
+}
+
+.planet-card:hover {
+  color: darkgreen;
+  background-color: #0e2210c5;
+  border: 3px dotted #2a6956;
+}
+
+.planet-image {
+  width: 100%;
+}
+
+.mission-card {
+  display: flex;
+  flex-direction: column;
+  width: 28%;
+  background-color: blueviolet;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+  background-color: #0e221c6c;
+  border: 3px solid #55dfb5;
+  border-radius: 10px;
+  transition: transform 0.4s;
+}
+
+.mission-card:hover {
+  transform: scale(1.2);
+}
+
+.mission-card-text {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+p {
+  margin-bottom: 3px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.mission-card-title {
+  font-size: 20px;
+  border-bottom: 3px solid #55dfb5;
+  margin-bottom: 3px;
+}
+
+.mission-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
